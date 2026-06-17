@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Product CRUD</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Product CRUD</h1>
+
+    <!-- Formulário de Busca por ID -->
+    <form id="search-product-form">
+      <h2>Search Product by ID</h2>
+      <label for="search-id">Product ID:</label>
+      <input type="number" id="search-id" name="search-id" required />
+      <button type="submit">Search</button>
+      <button type="button" id="clear-search">Clear Search</button>
+    </form>
+
+    <!-- Formulário para Adicionar Produto -->
+    <form id="add-product-form">
+      <h2>Add Product</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" required step="0.01" />
+
+      <!-- Novo campo: Descrição -->
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" />
+
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Formulário para Atualizar Produto (Estava faltando no HTML original) -->
+    <form id="update-product-form" style="display: none">
+      <h2>Update Product</h2>
+      <input type="hidden" id="update-id" />
+
+      <label for="update-name">Name:</label>
+      <input type="text" id="update-name" name="update-name" required />
+
+      <label for="update-price">Price:</label>
+      <input
+        type="number"
+        id="update-price"
+        name="update-price"
+        required
+        step="0.01"
+      />
+
+      <!-- Novo campo: Descrição -->
+      <label for="update-description">Description:</label>
+      <input type="text" id="update-description" name="update-description" />
+
+      <button type="submit">Save Update</button>
+      <button type="button" id="cancel-update">Cancel</button>
+    </form>
+
+    <ul id="products"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>

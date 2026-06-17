@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif; /*[cite: 3] */
+  background-color: #e9ecef; /* Fundo levemente mais escuro para destacar os blocos */
+}
+
+h1 {
+  margin-top: 20px; /*[cite: 3] */
+  margin-bottom: 10px; /*[cite: 3] */
+  text-align: center; /*[cite: 3] */
+}
+
+ul {
+  list-style: none; /*[cite: 3] */
+  padding: 0; /*[cite: 3] */
+  margin: 0 auto; /* Centraliza a lista */
+  max-width: 800px; /* Evita que a lista fique muito larga */
+  text-align: center; /*[cite: 3] */
+}
+
+li {
+  display: inline-block; /*[cite: 3] */
+  margin: 10px; /* Aumentei um pouco a margem */
+  padding: 15px 20px; /* Aumentei o padding */
+  background-color: #fff; /* Fundo branco para os cards[cite: 3] */
+  border-radius: 5px; /*[cite: 3] */
+  box-shadow: 2px 2px 5px #ccc; /* Sombra mais suave[cite: 3] */
+  text-align: left; /* Alinha o texto do card à esquerda */
+  width: calc(100% - 40px); /* Ocupa largura em telas menores */
+  max-width: 300px; /* Largura máxima do card */
+  vertical-align: top;
+}
+
+button {
+  margin-left: 5px; /* Reduzi um pouco[cite: 3] */
+  background-color: #4caf50; /*[cite: 3] */
+  color: white; /*[cite: 3] */
+  border: none; /*[cite: 3] */
+  border-radius: 5px; /*[cite: 3] */
+  padding: 8px 12px; /* Ajuste no padding[cite: 3] */
+  text-align: center; /*[cite: 3] */
+  text-decoration: none; /*[cite: 3] */
+  display: inline-block; /*[cite: 3] */
+  font-size: 14px; /*[cite: 3] */
+  cursor: pointer; /*[cite: 3] */
+  transition: background-color 0.3s; /*[cite: 3] */
+}
+
+button:hover {
+  background-color: #3e8e41; /*[cite: 3] */
+  opacity: 0.9;
+}
+
+/* Alteração: Centraliza e limita o tamanho dos formulários */
+form {
+  margin: 20px auto; /* Centraliza[cite: 3] */
+  text-align: center; /*[cite: 3] */
+  background-color: #fff; /*[cite: 3] */
+  padding: 20px; /*[cite: 3] */
+  border-radius: 5px; /*[cite: 3] */
+  box-shadow: 2px 2px 5px #ccc; /*[cite: 3] */
+  max-width: 400px; /* Limita a largura */
+}
+
+label {
+  display: block; /* Mudei para block para ficar acima do input[cite: 3] */
+  margin-bottom: 5px; /*[cite: 3] */
+  text-align: left;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='number'] {
+  padding: 8px; /* Aumentei um pouco[cite: 3] */
+  border-radius: 5px; /*[cite: 3] */
+  border: 1px solid #ccc; /*[cite: 3] */
+  width: 100%; /*[cite: 3] */
+  margin-bottom: 15px; /*[cite: 3] */
+  box-sizing: border-box; /*[cite: 3] */
+}
+
+input[type='submit'],
+button[type='submit'] {
+  background-color: #4caf50; /*[cite: 3] */
+  color: white; /*[cite: 3] */
+  border: none; /*[cite: 3] */
+  border-radius: 5px; /*[cite: 3] */
+  padding: 10px 15px; /* Ajuste[cite: 3] */
+  text-align: center; /*[cite: 3] */
+  text-decoration: none; /*[cite: 3] */
+  display: inline-block; /*[cite: 3] */
+  font-size: 14px; /*[cite: 3] */
+  cursor: pointer; /*[cite: 3] */
+  transition: background-color 0.3s; /*[cite: 3] */
+  width: 100%; /* Ocupa a largura toda do form */
+  margin-bottom: 5px;
+}
+
+input[type='submit']:hover,
+button[type='submit']:hover {
+  background-color: #3e8e41; /*[cite: 3] */
+}
+
+/* Botões de limpar/cancelar dentro do form */
+form button[type='button'] {
+  background-color: #777;
+  width: 100%;
+  margin-left: 0;
+}
+form button[type='button']:hover {
+  background-color: #555;
+}
+
+input[type="number"]::-webkit-outer-spin-button, /*[cite: 3] */
+input[type="number"]::-webkit-inner-spin-button {
+  /*[cite: 3] */
+  -webkit-appearance: none; /*[cite: 3] */
+  margin: 0; /*[cite: 3] */
+}
+
+input[type='number'] {
+  /*[cite: 3] */
+  -moz-appearance: textfield; /*[cite: 3] */
+}
